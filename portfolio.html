@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>PAGINA DARIO GUERRERO BOLAÑOS</title>
+    <meta NAME="VIEWPORT" content="WIDTH=DEVICE-WIDTH,INITIAL-SCALE=1.0">
+    <link rel="shorthcut icon" href="MEDIA/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="CSS/Site.css">
+    <link href="https://css.gg/css" rel="stylesheet" />
+    <script src="js/site.js"></script>
+</head>
+
+<body>
+    
+    <div class="main-content">
+        <aside>
+            <div class="profile">
+                <img src="MEDIA/myAvatar.png" height="116" width="116" id="photo-profile" class="my-photo" />
+                <div>
+                    <h1 class="title">Darío Guerrero Bolaños</h1>
+                    <div class="badge-profile">Ing. Químico</div>
+                    <div class="social">
+                        <a href="facebook.com" target="_blanck"> <i class="gg-Facebook"></i></a>
+                        <a href="twitter.com" target="_blank>"> <i class="gg-twitter"></i></a>
+                        <a href="YouTube.com"><i class="gg-youtube"></i></a>
+                        <a href="pokemon-go.com"> <i class="gg-pokemon"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="contacts-block">
+                        <li class="contacts-block-item">Diciembre,19 </li>
+                        <li class="contacts-block-item">Tlatlauqui,Puebla</li>
+                        <li class="contacts-block-item"><a href="mailto:umodi17@gmail.com">d.rgb@hotmail</a></li>
+                        <li class="contacts-block-item phone"> +52 (233) 1154443 </li>
+                        <li class="contacts-block-item"><a href="skype:skype-umodi">Dargueb</a></li>
+                    </ul>
+
+                    <a class="btn" href="#">Download CV</a>
+                </div>
+            </div>
+        </aside>
+        <section class="resume">
+            <header>
+
+                <div>
+                    <h2 class="title bordered">Portafolio</h2>
+                    <p align="right"> <a href="index.html"> Ir a Acerca de...</a> </p>
+                </div>
+                <div class="portfolio">
+                    <img src="MEDIA/Robot1.jpg" alt="imagen 1" onclick="showImage(this)" />
+                    <img src="MEDIA/robot 2.jpg" alt="imagen 2" onclick="showImage(this)" />
+                    <img src="MEDIA/Robot3.jpg" alt="imagen 3" onclick="showImage(this)" />
+                    <img src="MEDIA/robot 4.jpg" alt="imagen 4" onclick="showImage(this)"/>
+                    <img src="MEDIA/robot 5.jpg" alt="imagen 5" onclick="showImage(this)"/>
+                    <img src="MEDIA/robot 6.jpg" alt="imagen 6" onclick="showImage(this)" />
+                    <img src="MEDIA/robot 7.jpg" alt="imagen 7" onclick="showImage(this)" />
+                </div>
+
+                <div class = "modal" id="preview">
+                    <span class="close-button" id="closeModal">&times; Cerrar</span>
+                    <img id="modalImage" src="" alt="Imagen Ampliada">
+
+                </div>
+            </header>
+        </section>
+    </div>
+    <
+</div>
+
+
+    <footer class="Cultura"> Este será mi pie de página</footer>
+    <script>
+        function showImage(imgElement) {
+            var modal = document.getElementById('preview');
+            var modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgElement.src;
+        }
+
+        document.getElementById('closeModal').addEventListener('click', function() {
+            var modal = document.getElementById('preview');
+            modal.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>
